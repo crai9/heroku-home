@@ -8,6 +8,14 @@ group = 'party.craig'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+jar {
+	manifest {
+		attributes (
+			'Main-Class' : 'party.craig.Main.HomeApplication'
+		)
+	}
+}
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
